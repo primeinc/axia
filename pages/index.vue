@@ -32,10 +32,12 @@
         >
           <testimonials />
         </section>
-        <section id="case-studies">
-          <case-studies />
-        </section>
-        <section id="call-to-action" class="space-top-short">
+      </div>
+      <div class="container-wrap scroll-nav-content">
+        <!-- <section id="case-studies"> -->
+          <!-- <case-studies /> -->
+        <!-- </section> -->
+        <section id="call-to-action" class="">
           <call-action />
         </section>
         <section id="address" class="space-top-short">

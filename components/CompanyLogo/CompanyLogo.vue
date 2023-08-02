@@ -17,14 +17,14 @@
 export default {
   data() {
     return {
-      logos: [
-        '/images/logos/architect.png',
-        '/images/logos/cloud.png',
-        '/images/logos/coin.png',
-        '/images/logos/mobile.png',
-        '/images/logos/profile.png',
-        '/images/logos/saas.png',
-      ],
+      // logos: [
+      //   '/images/logos/architect.png',
+      //   '/images/logos/cloud.png',
+      //   '/images/logos/coin.png',
+      //   '/images/logos/mobile.png',
+      //   '/images/logos/profile.png',
+      //   '/images/logos/saas.png',
+      // ],
     };
   },
 };

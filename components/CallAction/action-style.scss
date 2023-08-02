@@ -3,13 +3,14 @@
   p {
     margin: 0
   }
+  z-index: 10;
 }
 
 .background {
-  width: 560px;
+  width: 760px;
   height: 560px;
   top: $spacing10 * -5;
-  @include left(20%);
+  @include right(40%);
   position: absolute;
   transform: scale(3);
   &.front {

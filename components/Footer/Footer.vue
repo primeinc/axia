@@ -178,24 +178,20 @@ export default {
     logo,
     brand,
     footers: [
-      {
-        title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#team', '#history', '#contact-us', '#locations'],
-      },
+      // {
+      //   title: 'Company',
+      //   description: ['Team', 'History', 'Contact us', 'Locations'],
+      //   link: ['#team', '#history', '#contact-us', '#locations'],
+      // },
       {
         title: 'Resources',
         description: [
-          'Resource',
-          'Resource name',
-          'Another resource',
-          'Final resource',
+          'Net Sheet Calc',
+          'Title Estimator ',
         ],
         link: [
           '#resource',
-          '#resource-name',
-          '#another-resource',
-          '#final-resource',
+          '#resource',
         ],
       },
       {

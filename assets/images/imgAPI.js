@@ -40,6 +40,16 @@ const imgAPI = {
     'https://via.placeholder.com/713x309/79c0ff/FFFFFF',
     'https://via.placeholder.com/711x693/52596b/FFFFFF',
   ],
+  services: {
+    search: '/images/services/title-search.png',
+    insurance: '/images/services/title-insurance.png',
+    escrow: '/images/services/title-escrow.png',
+    closing: '/images/services/title-closing.png',
+    clearance: '/images/services/title-clearance.png',
+    recording: '/images/services/title-recording.png',
+    notary: '/images/services/title-notary.png',
+    property: '/images/services/title-property.png',
+  }
 };
 
 export default imgAPI;

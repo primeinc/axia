@@ -1,43 +1,27 @@
 <template>
   <div class="root">
+      <svg
+    fill="cccccc"
+    width="1045px"
+    height="599px"
+    class="background base"
+  >
+    <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
+  </svg>
+  <svg
+    fill="cccccc"
+    width="1045px"
+    height="599px"
+    class="background front"
+  >
+    <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
+  </svg>
     <v-container class="fixed-width">
       <v-row class="spacing6">
         <v-col v-if="isDesktop" cols="12" md="1" class="pa-6" />
         <v-col cols="12" lg="5" md="6" class="pa-6">
           <title-deco :text="$t('agencyLanding.office_title')" />
           <div class="block">
-            <div
-              data-aos="fade-left"
-              data-aos-offset="450"
-              data-aos-delay="300"
-              data-aos-duration="300"
-            >
-              <v-card class="paper">
-                <h6 class="text-h6">
-                  {{ $t('agencyLanding.office_head') }}
-                </h6>
-                <v-row>
-                  <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-phone
-                    </v-icon>
-                    <span>{{ $t('agencyLanding.office_head_phone') }}</span>
-                  </v-col>
-                  <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-email
-                    </v-icon>
-                    <span>{{ $t('agencyLanding.office_head_email') }}</span>
-                  </v-col>
-                  <v-col cols="12" sm="12">
-                    <v-icon class="icon">
-                      mdi-map-marker
-                    </v-icon>
-                    {{ $t('agencyLanding.office_head_address') }}
-                  </v-col>
-                </v-row>
-              </v-card>
-            </div>
             <!-- <div
               data-aos="fade-left"
               data-aos-offset="450"
@@ -73,21 +57,38 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="pa-6">
-          <v-card class="map">
-            <GoogleMap
-              :zoom="5"
-              :center="center"
-              style="width: 100%; height: 100%"
+          <div
+              data-aos="fade-left"
+              data-aos-offset="250"
+              data-aos-delay="300"
+              data-aos-duration="300"
             >
-              <MarkerCluster>
-                <Marker
-                  v-for="(location, i) in locations"
-                  :key="i"
-                  :options="{ position: location }"
-                />
-              </MarkerCluster>
-            </GoogleMap>
-          </v-card>
+              <v-card class="paper">
+                <h6 class="text-h6">
+                  {{ $t('agencyLanding.office_head') }}
+                </h6>
+                <v-row>
+                  <v-col cols="12" sm="6">
+                    <v-icon class="icon">
+                      mdi-phone
+                    </v-icon>
+                    <span>{{ $t('agencyLanding.office_head_phone') }}</span>
+                  </v-col>
+                  <v-col cols="12" sm="6">
+                    <v-icon class="icon">
+                      mdi-email
+                    </v-icon>
+                    <span>{{ $t('agencyLanding.office_head_email') }}</span>
+                  </v-col>
+                  <v-col cols="12" sm="12">
+                    <v-icon class="icon">
+                      mdi-map-marker
+                    </v-icon>
+                    {{ $t('agencyLanding.office_head_address') }}
+                  </v-col>
+                </v-row>
+              </v-card>
+            </div>
         </v-col>
       </v-row>
     </v-container>

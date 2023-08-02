@@ -34,7 +34,7 @@
         </div>
       </v-container>
     </div>
-    <company-logo />
+    <!-- <company-logo /> -->
   </div>
 </template>
 
@@ -62,76 +62,70 @@ export default {
   data() {
     return {
       loaded: false,
-      testiContent: [
+      testiContent:[
         {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
-          name: 'John Doe',
-          title: 'Chief Digital Officer',
-          rating: 5,
+          "text": "Axia Title has been a game-changer for us. Their speedy and accurate title commitments and closing packages have been remarkable. We can always count on them for top-notch service!",
+          "avatar": imgAPI.avatar[9],
+          "name": "Sarah Thompson",
+          "title": "Real Estate Agent",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[1],
-          name: 'Jean Doe',
-          title: 'Chief Digital Officer',
-          rating: 4,
+          "text": "For several years, we've relied on Axia Title's exceptional title services. Their team goes above and beyond, ensuring our backroom processes run smoothly. Axia Title feels like a true partner, not just a vendor.",
+          "avatar": imgAPI.avatar[2],
+          "name": "Michael Ramirez",
+          "title": "Property Developer",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[2],
-          name: 'Jena Doe',
-          title: 'Graphic Designer',
-          rating: 4,
+          "text": "Axia Title deserves high praise for their professionalism and accountability. We confidently recommend them to our clients, knowing they'll receive the best service possible.",
+          "avatar": imgAPI.avatar[1],
+          "name": "Emily Collins",
+          "title": "Mortgage Broker",
+          "rating": 5
         },
         {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[3],
-          name: 'Jovelin Doe',
-          title: 'Senior Graphic Designer',
-          rating: 3,
+          "text": "As our go-to title company for over a decade, Axia Title continues to impress with their speed and efficiency. They adapt to market demands like no one else, and their dedication to excellence is truly commendable.",
+          "avatar": imgAPI.avatar[8],
+          "name": "Robert Anderson",
+          "title": "Real Estate Investor",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[4],
-          name: 'Jihan Doe',
-          title: 'CEO Software House',
-          rating: 5,
+          "text": "Axia Title has consistently exceeded our expectations for many years. Their quick updates and seamless closings make every transaction a breeze. We trust them wholeheartedly with all our transactions.",
+          "avatar": imgAPI.avatar[6],
+          "name": "Jennifer Mitchell",
+          "title": "Homebuyer",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[6],
-          name: 'Jovelin Doe',
-          title: 'Senior Graphic Designer',
-          rating: 5,
+          "text": "We can confidently say that Axia Title is the best title company we've worked with. Their commitment to excellence sets them apart. The speed and professionalism of their staff are unmatched.",
+          "avatar": imgAPI.avatar[4],
+          "name": "David Patterson",
+          "title": "Real Estate Agent",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[7],
-          name: 'John Doe',
-          title: 'Senior Graphic Designer',
-          rating: 4,
+          "text": "Axia Title's dedication to providing exceptional service consistently impresses us. Their efficiency and attention to detail have made our real estate transactions smooth and successful. We highly recommend them!",
+          "avatar": imgAPI.avatar[7],
+          "name": "Laura Evans",
+          "title": "Home Seller",
+          "rating": 5
         },
         {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
-          name: 'John Doe',
-          title: 'Chief Digital Officer',
-          rating: 5,
+          "text": "Axia Title has been an invaluable partner in our business. They adapt to our needs and deliver outstanding results. We appreciate their hard work and commitment to excellence.",
+          "avatar": imgAPI.avatar[10],
+          "name": "Mark Johnson",
+          "title": "Property Manager",
+          "rating": 5
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[1],
-          name: 'Jean Doe',
-          title: 'Chief Digital Officer',
-          rating: 4,
-        },
+          "text": "Working with Axia Title has been refreshing. Their dedication to clients is evident in every interaction. Exceptional service all around! We look forward to many more successful transactions with them.",
+          "avatar": imgAPI.avatar[3],
+          "name": "Jessica Lee",
+          "title": "Real Estate Broker",
+          "rating": 5
+        }
       ],
       slickOptions: {
         pagination: true,

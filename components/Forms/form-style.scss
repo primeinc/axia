@@ -1,5 +1,5 @@
 .form-wrap {
-  margin-top: $spacing10;
+  margin-top: $spacing5;
   position: relative;
   text-align: center;
   h3 {
@@ -59,8 +59,12 @@
   }
 }
 
+.margin {
+  margin: 0 !important;
+}
+
 .btn-area {
-  margin-top: $spacing5;
+  // margin-top: $spacing5;
   label {
     @include text-align(left)
   }

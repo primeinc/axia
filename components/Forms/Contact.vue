@@ -48,7 +48,7 @@
           ref="form"
           v-model="valid"
         >
-          <v-row class="spacing6">
+          <v-row class="spacing6 margin">
             <v-col cols="12" sm="6" class="pa-6">
               <v-text-field
                 v-model="name"

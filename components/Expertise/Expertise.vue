@@ -148,15 +148,9 @@ export default {
         },
       },
       expertiseList: [
-        ['social media', 'marketing', 'SEO'],
-        ['Web Development', 'UI Designs', 'Mobile Apps'],
-        ['Photography', 'Company Profile', 'Visual Editing'],
-        ['social media', 'marketing', 'SEO'],
-        ['Web Development', 'UI Designs', 'Mobile Apps'],
-        ['Photography', 'Company Profile', 'Visual Editing'],
-        ['social media', 'marketing', 'SEO'],
-        ['Web Development', 'UI Designs', 'Mobile Apps'],
-        ['Photography', 'Company Profile', 'Visual Editing'],
+        ['Cape Coral', 'Fort Myers', 'Estero'],
+        ['Bonita Springs', 'Naples', 'LeHigh Acres'],
+        ['Punta Gorda', 'Port Charlotte', 'Lee & Collier County'],
       ],
     };
   },

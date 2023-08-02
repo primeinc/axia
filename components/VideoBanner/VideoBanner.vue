@@ -24,6 +24,7 @@
               variant="outlined"
               size="large"
               color="secondary"
+              href="/contact"
               class="button"
             >
               {{ $t('agencyLanding.banner_button') }}
