@@ -69,7 +69,7 @@ $flag: "/images/flag-logo.png";
 }
 
 .header.v-app-bar.v-toolbar {
-  background-color: transparent;
+  background-color: white;
   @include palette-text-primary;
   z-index: 1007 !important;
   box-shadow: none;
