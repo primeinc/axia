@@ -1,6 +1,6 @@
-$flag: '/images/flag-logo.png';
+$flag: "/images/flag-logo.png";
 
-@mixin flag-icon{
+@mixin flag-icon {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -14,19 +14,19 @@ $flag: '/images/flag-logo.png';
     background-position: 0 3px;
   }
   &.zh {
-    background-position: 0 -12px
+    background-position: 0 -12px;
   }
   &.en {
-    background-position: 0 -28px
+    background-position: 0 -28px;
   }
   &.de {
-    background-position: 0 -44px
+    background-position: 0 -44px;
   }
   &.id {
-    background-position: 0 -62px
+    background-position: 0 -62px;
   }
   &.pt {
-    background-position: 0 -79px
+    background-position: 0 -79px;
   }
 }
 
@@ -34,7 +34,7 @@ $flag: '/images/flag-logo.png';
   @include palette-background-paper;
   width: 200px;
   .v-list {
-    border-radius: 0
+    border-radius: 0;
   }
 }
 
@@ -42,10 +42,10 @@ $flag: '/images/flag-logo.png';
   margin: spacing(-4, 2, 0);
   height: 24px;
   :deep(.v-switch__thumb) {
-    color: $palette-secondary-main
+    color: $palette-secondary-main;
   }
   :deep(.v-switch__track) {
-    background-color: $palette-secondary-light
+    background-color: $palette-secondary-light;
   }
   :deep(.v-selection-control) {
     justify-content: center;
@@ -60,11 +60,11 @@ $flag: '/images/flag-logo.png';
 @keyframes slideRight {
   from {
     opacity: 0;
-    transform: translateX(-100px)
+    transform: translateX(-100px);
   }
   to {
     opacity: 1;
-    transform: none
+    transform: none;
   }
 }
 
@@ -77,12 +77,12 @@ $flag: '/images/flag-logo.png';
   position: fixed;
   padding: spacing(1, 0);
   @include breakpoints-down(md) {
-    z-index: 90
+    z-index: 90;
   }
   .v-container {
     #main-wrap & {
       @include breakpoints-down(sm) {
-        padding: 0
+        padding: 0;
       }
     }
   }
@@ -98,17 +98,17 @@ $flag: '/images/flag-logo.png';
     @include palette-background-paper;
     .logo {
       a {
-        @include palette-text-primary
+        @include palette-text-primary;
       }
       img {
-        height: 32px;
-        width: 32px
+        height: 33px;
       }
     }
     .bar {
       @include breakpoints-down(sm) {
         @include palette-background-text-secondary;
-        &:after, &:before {
+        &:after,
+        &:before {
           @include palette-background-text-secondary;
         }
       }
@@ -116,25 +116,26 @@ $flag: '/images/flag-logo.png';
     nav {
       padding: spacing(1.5, 0);
       ul li a {
-        @include palette-text-primary
+        @include palette-text-primary;
       }
     }
     :deep(.v-icon) {
-      @include palette-text-secondary
+      @include palette-text-secondary;
     }
   }
   &.open-drawer {
     box-shadow: none !important;
     .logo {
       a {
-        @include palette-text-primary
+        @include palette-text-primary;
       }
     }
   }
 }
 
-.v-toolbar__content, .v-toolbar__extension {
-  padding: 0
+.v-toolbar__content,
+.v-toolbar__extension {
+  padding: 0;
 }
 
 .header-content {
@@ -146,15 +147,15 @@ $flag: '/images/flag-logo.png';
     padding: $spacing2;
     display: flex;
     @include breakpoints-down(md) {
-      padding: spacing(2, 0)
+      padding: spacing(2, 0);
     }
   }
 }
 
 .v-application .v-application--wrap .logo {
   a {
-    @include breakpoints-down('sm') {
-      color: $palette-common-white
+    @include breakpoints-down("sm") {
+      color: $palette-common-white;
     }
   }
 }
@@ -167,28 +168,28 @@ $flag: '/images/flag-logo.png';
     align-items: center;
     font-weight: 500;
     color: $palette-common-white;
-    @include breakpoints-up('md') {
+    @include breakpoints-up("md") {
       @include palette-text-primary;
     }
   }
   img {
     transition: all 0.3s ease;
-    max-width: 48px;
-    height: 48px;
-    width: 48px;
+    max-width: 3333px;
+    height: 33px;
     @include margin-right($spacing1);
   }
 }
 
 .nav-logo {
   &.invert {
-    .logo a{
-      @include palette-text-primary
+    .logo a {
+      @include palette-text-primary;
     }
     .bar {
       @include breakpoints-down(sm) {
         @include palette-background-text-secondary;
-        &:after, &:before {
+        &:after,
+        &:before {
           @include palette-background-text-secondary;
         }
       }
@@ -219,12 +220,12 @@ $flag: '/images/flag-logo.png';
     @include padding-left($spacing5);
     li {
       @include breakpoints-up(lg) {
-        margin: spacing(0, 2)
+        margin: spacing(0, 2);
       }
       list-style: none;
       position: relative;
       display: inline-block;
-      .v-btn  {
+      .v-btn {
         color: $palette-common-white;
         text-transform: capitalize;
         font-size: 18px;
@@ -238,7 +239,7 @@ $flag: '/images/flag-logo.png';
         margin-top: $spacing1 * 0.5;
         min-width: 0;
         &:before {
-          content: '';
+          content: "";
           border-bottom: 3px solid #fff;
           width: 0%;
           position: absolute;
@@ -250,12 +251,12 @@ $flag: '/images/flag-logo.png';
           transition: all 0.3s ease-out;
           background: none;
           &:after {
-            opacity: 0
+            opacity: 0;
           }
           &:before {
             width: 60%;
             @include left(8px);
-            border-bottom-color: $palette-primary-light
+            border-bottom-color: $palette-primary-light;
           }
         }
         &.active {
@@ -281,7 +282,7 @@ $flag: '/images/flag-logo.png';
 }
 
 .mode-menu {
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .user-menu {
@@ -295,7 +296,7 @@ $flag: '/images/flag-logo.png';
   border-left: 1px solid;
   @include palette-divider;
   min-height: $spacing3;
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .setting {
@@ -305,25 +306,25 @@ $flag: '/images/flag-logo.png';
     color: $palette-common-white;
   }
   .active {
-    transform: rotate(30deg)
+    transform: rotate(30deg);
   }
   @include breakpoints-down(sm) {
-    margin: $spacing1
+    margin: $spacing1;
   }
 }
 
 .title-menu {
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .v-list-item__content {
-  padding: 0
+  padding: 0;
 }
 
 paper-nav {
   width: 100%;
   @media (min-width: 680px) {
-    width: 300px
+    width: 300px;
   }
 }
 
@@ -331,14 +332,16 @@ paper-nav {
   margin: spacing(0, 1);
   .bar {
     background-color: $palette-common-white;
-    &:after, &:before {
+    &:after,
+    &:before {
       background-color: $palette-common-white;
     }
   }
   &.is-active {
     .bar {
       @include palette-background-text-secondary;
-      &:after, &:before {
+      &:after,
+      &:before {
         @include palette-background-text-secondary;
       }
     }
@@ -350,7 +353,7 @@ paper-nav {
   z-index: 90;
   min-width: 300px;
   @include breakpoints-down(xs) {
-    width: 100% !important
+    width: 100% !important;
   }
   .menu {
     padding: spacing(0, 2);
@@ -360,7 +363,7 @@ paper-nav {
     position: absolute;
     height: calc(100% - 80px);
     a {
-      @include palette-text-primary
+      @include palette-text-primary;
     }
     .menu-list {
       text-transform: capitalize;

@@ -1,24 +1,18 @@
-// Colors
-import colors from 'vuetify/lib/util/colors';
-
 const palette = {
-  violet: {
-    primary: '#8c52ff', // primary main
-    primarylight1: '#b07cff', // primary light variant 1
-    primarylight: '#d1a4ff', // primary light variant 2
-    primarydark1: '#6538cc', // primary dark variant 1
-    primarydark: '#4d2e99', // primary dark variant 2
-    secondary: '#52a1ff', // secondary main
-    secondarylight1: '#ffa4ff', // secondary light variant 1
-    secondarylight: '#99c7ff', // secondary light variant 2
-    secondarydark: '#3970b3', // secondary dark variant 1
-    secondarydark2: '#b12db1', // secondary dark variant 2
-    anchor: '#8c52ff', // link color, same as primary main
+  blueGray: {
+    primary: "#003366", // Dark blue as primary
+    primarylight1: "#003d78", // Lighter blue for highlights or hover
+    primarylight: "#6699cc", // Lightest blue for links
+    primarydark1: "#002244", // Even darker blue, if needed
+    secondary: "#ff6600", // Muted orange as secondary
+    secondarylight1: "#ff8533", // Lighter orange for highlights
+    secondarydark: "#cc5200", // Darker orange for buttons, etc.
+    anchor: "#003d78", // Link color matching primary light
   },
 };
 
 const theme = {
-  ...palette.violet,
+  ...palette.blueGray,
 };
 
 export default theme;

@@ -1,14 +1,14 @@
 const brand = {
   agency: {
-    name: 'AXIA TITLE',
-    desc: 'Axia Title is a premier title company providing professional title services in Cape Coral, Fort Myers, Estero, Bonita Springs, Naples, LeHigh Acres, Punta Gorda, Port Charlotte, Lee County, and Collier County.',
-    prefix: 'axia',
-    footerText: 'Axia Title - All Rights Reserved',
-    logoText: 'Axia Title',
-    projectName: 'Axia Title',
-    url: 'axiatitle.com',
-    img: '/static/images/agency-logo.png',
-    notifMsg: 'notify-msg',
+    name: "Coastal Title Solutions",
+    desc: "Ride the Title Wave. Coastal Title Solutions is a branch of Title Solutions Agency, providing professional title services with offices in Ft Lauderdale, Miami, and Tampa, focusing on personalized solutions in coastal regions.",
+    prefix: "coastal",
+    footerText: "Coastal Title Solutions - All Rights Reserved",
+    logoText: "Coastal Title Solutions",
+    projectName: "Coastal Title Solutions",
+    url: "coastaltitlellc.com", // Updated URL
+    img: "/static/images/coastal-logo.png", // Update the logo path if necessary
+    notifMsg: "notify-msg",
   },
 };
 

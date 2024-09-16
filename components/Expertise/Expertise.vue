@@ -1,18 +1,8 @@
 <template>
-  <svg
-    fill="#cccccc"
-    width="845px"
-    height="1099px"
-    class="background base"
-  >
+  <svg fill="#cccccc" width="845px" height="1099px" class="background base">
     <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
   </svg>
-  <svg
-    fill="#cccccc"
-    width="845px"
-    height="1099px"
-    class="background front"
-  >
+  <svg fill="#cccccc" width="845px" height="1099px" class="background front">
     <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
   </svg>
   <div class="root">
@@ -46,25 +36,13 @@
                   :duration="1500"
                   easing="cubic-bezier(0.23, 1, 0.32, 1)"
                 >
-                  <kinesis-element
-                    :strength="15"
-                    type="translate"
-                    tag="div"
-                  >
+                  <kinesis-element :strength="15" type="translate" tag="div">
                     <span class="icon-green" />
                   </kinesis-element>
-                  <kinesis-element
-                    :strength="10"
-                    type="translate"
-                    tag="div"
-                  >
+                  <kinesis-element :strength="10" type="translate" tag="div">
                     <span class="icon-violet" />
                   </kinesis-element>
-                  <kinesis-element
-                    :strength="30"
-                    type="translate"
-                    tag="div"
-                  >
+                  <kinesis-element :strength="30" type="translate" tag="div">
                     <span class="icon-blue" />
                   </kinesis-element>
                 </kinesis-container>
@@ -72,16 +50,12 @@
             </div>
           </div>
         </v-col>
-        <v-col
-          cols="12"
-          lg="7"
-          md="8"
-        >
+        <v-col cols="12" lg="7" md="8">
           <h4 class="title-default use-text-subtitle">
-            {{ $t('agencyLanding.expertise_subtitle') }}
+            {{ $t("agencyLanding.expertise_subtitle") }}
           </h4>
           <p class="desc use-text-paragraph">
-            {{ $t('agencyLanding.expertise_paragraph') }}
+            {{ $t("agencyLanding.expertise_paragraph") }}
           </p>
           <hidden point="xsDown">
             <div v-if="loaded" class="running-tag">
@@ -110,15 +84,15 @@
 </template>
 
 <style lang="scss" scoped>
-@import './expertise-style.scss';
-@import '../Title/title-style.scss';
+@import "./expertise-style.scss";
+@import "../Title/title-style.scss";
 </style>
 
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import AOS from 'aos';
-import TitleDeco from '../Title/WithDecoration';
-import Hidden from '../Hidden';
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import AOS from "aos";
+import TitleDeco from "../Title/WithDecoration";
+import Hidden from "../Hidden";
 
 export default {
   components: {
@@ -131,10 +105,10 @@ export default {
     return {
       loaded: false,
       slickOptions: {
-        direction: 'ttb',
-        height: '10rem',
-        type: 'loop',
-        focus: 'center',
+        direction: "ttb",
+        height: "10rem",
+        type: "loop",
+        focus: "center",
         autoplay: true,
         perPage: 3,
         perMove: 1,
@@ -148,9 +122,18 @@ export default {
         },
       },
       expertiseList: [
-        ['Cape Coral', 'Fort Myers', 'Estero'],
-        ['Bonita Springs', 'Naples', 'LeHigh Acres'],
-        ['Punta Gorda', 'Port Charlotte', 'Lee & Collier County'],
+        ["Fort Lauderdale", "Hollywood", "Pompano Beach"],
+        ["Pembroke Pines", "Miramar", "Weston"],
+        ["Coral Springs", "Davie", "Plantation"],
+        ["Miami", "Miami Beach", "Hialeah"],
+        ["Coral Gables", "Doral", "Miami Gardens"],
+        ["North Miami", "Aventura", "Key Biscayne"],
+        ["Tampa", "St. Petersburg", "Clearwater"],
+        ["Brandon", "Riverview", "Plant City"],
+        ["Lutz", "Wesley Chapel", "New Port Richey"],
+        ["Palm Harbor", "Dunedin", "Tarpon Springs"],
+        ["Largo", "Seminole", "Pinellas Park"],
+        ["Apollo Beach", "Sun City Center", "Oldsmar"],
       ],
     };
   },
